@@ -40,7 +40,7 @@ func main(){
 		}
 		if update.Message.NewChatParticipant.UserName != "" {
 			// новый пользователь зашел
-			reply = fmt.Sprintf(`Привет @%s! Я тут слежу за порядком. Веди себя хорошо.`, update.Message.NewChatParticipant.UserName)
+			reply = fmt.Sprintf(`Привет @%s!`, update.Message.NewChatParticipant.UserName)
 		}
 		if reply != "" {
 			msg := tgbotapi.NewMessage(ChatID, reply)
