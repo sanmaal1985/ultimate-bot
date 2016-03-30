@@ -6,7 +6,7 @@ import (
 	"github.com/Syfaro/telegram-bot-api"
 )
 func main(){
-	bot, err := tgbotapi.NewBotAPI("205446592:AAF7JAztEMT_YadcVEXh9PypNVfa8Dml1s0")
+	bot, err := tgbotapi.NewBotAPI("Токен")
 	if err != nil{
 		log.Panic(err)
 	}
@@ -35,7 +35,7 @@ func main(){
 			log.Printf("получена команда - %s", command)
 			switch command {
 			case "/help":
-				reply = "Бот Ultimate Frisbee сообщества в г.Барнаул"
+				reply = "Бот Ultimate Frisbee сообщества в г.Барнаул \n Знаю команды: \n \\train - информация о тренировках, \n \\info - информация о команде "
 			}
 		}
 		if update.Message.NewChatParticipant.UserName != "" {

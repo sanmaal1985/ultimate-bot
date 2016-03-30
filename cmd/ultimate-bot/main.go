@@ -6,7 +6,7 @@ import (
 	"github.com/Syfaro/telegram-bot-api"
 )
 func main(){
-	bot, err := tgbotapi.NewBotAPI("205446592:AAF7JAztEMT_YadcVEXh9PypNVfa8Dml1s0")
+	bot, err := tgbotapi.NewBotAPI("Токен")
 	if err != nil{
 		log.Panic(err)
 	}
