@@ -14,7 +14,7 @@ func main(){
 	log.Printf("Авторизован как %s", bot.Self.UserName)
 	// инициализируем канал, куда будут прилетать обновления от API
 	var ucfg tgbotapi.UpdateConfig = tgbotapi.NewUpdate(0)
-	ucfg.Timeout = 60
+	ucfg.Timeout = 15
 	updates, err := bot.GetUpdatesChan(ucfg)
 	// читаем обновления из канала
 	for update := range updates {

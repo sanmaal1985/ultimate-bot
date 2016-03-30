@@ -1,1 +1,1 @@
-worker: ultimate-bot
+web: ultimate-bot
